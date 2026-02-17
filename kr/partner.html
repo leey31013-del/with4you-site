@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>with4you — 제휴(신청)</title>
-  <meta name="description" content="정적 데모이며 신청 내용은 저장되지 않습니다."/>
+  <title>with4you — 제휴</title>
+  <meta name="description" content="정적 데모(신청 저장 안됨)."/>
   <link rel="stylesheet" href="../assets/style.css"/>
   <script defer src="../assets/app.js"></script>
 </head>
@@ -14,96 +14,65 @@
       <aside class="nav">
         <div class="brand">
           <div class="logo">w4</div>
-          <div class="t">
+          <div>
             <b>with4you</b>
-            <span>손안의 내 세상</span>
+            <span>손안의 내 세상 (with4you.com)</span>
           </div>
         </div>
 
-        <div class="kicker" style="margin-top:12px;">
-          <span class="pill">AI messenger</span>
-          <span class="pill">Ephemeral chat</span>
-          <span class="pill">디지털 자산</span>
+        <div class="pills">
+          <span class="pill">AI 메신저</span>
+          <span class="pill">서버 저장 없음</span>
+          <span class="pill">Coin ✕ / 디지털 자산 ✓</span>
         </div>
 
-        
         <div class="lang">
-          <a class="btn" data-lang="kr" href="./" aria-current="page">KR</a>
-          <a class="btn ghost" data-lang="en" href="../en/">EN</a>
+          <a class="btn" href="./">KR</a>
+          <a class="btn" href="../en/partner.html">EN</a>
         </div>
-        
 
-        <nav class="menu" aria-label="Primary">
-          <a class="item" href="../index.html">• 홈</a>
+        <nav class="menu"><a class="item" href="../index.html">• 홈</a>
 <a class="item" href="product.html">• 제품</a>
 <a class="item" href="market.html">• 쇼핑</a>
 <a class="item active" href="partner.html">• 제휴(신청)</a>
 <a class="item" href="qa.html">• Q&A</a>
 <a class="item" href="notices.html">• 공지사항</a>
-<a class="item" href="admin.html">• 관리자</a>
-        </nav>
+<a class="item" href="admin.html">• 관리자</a></nav>
 
-        <hr class="sep"/>
-        <div class="note">
-          정적 데모 사이트입니다. API/비밀번호/민감정보는 포함되지 않습니다.
+        <div class="note" style="margin-top:12px;">
+          정적 투자자 데모. API/비밀번호/민감정보 없음.
         </div>
       </aside>
 
       <main class="main">
         <section class="hero">
-          <div class="kicker">
-            <span class="pill">AI 메신저</span>
-            <span class="pill">서버 저장 없음</span>
-            <span class="pill">텍스트 번역 우선</span>
-          </div>
           <h1>제휴(신청)</h1>
-          <p class="lead">투자 · 광고 · 전략제휴<br/>정적 데모이며 신청 내용은 저장되지 않습니다.</p>
+          <p class="lead"><b>투자·광고·전략제휴</b><br/>정적 데모(신청 저장 안됨).</p>
           <div class="btnRow">
-            <a class="btn primary" href="partner.html">Partnership 신청</a>
-            <a class="btn secondary" href="market.html">쇼핑(미리보기)</a>
-            <a class="btn secondary" href="qa.html">Q&A</a>
+            <a class="btn primary" href="partner.html">제휴(신청)</a>
+            <a class="btn" href="market.html">쇼핑 미리보기</a>
+            <a class="btn" href="qa.html">Q&A</a>
           </div>
         </section>
 
         <section class="section">
           
-<h2>제휴(신청)</h2>
-<div class="card"><b>투자 · 광고 · 전략제휴</b><p>투자자/파트너가 쉽게 구경하고, 바로 신청할 수 있는 코너입니다.</p></div>
-
-<form class="form" onsubmit="event.preventDefault(); alert('정적 데모입니다. 신청 내용은 저장되지 않습니다.');">
-  <div class="field">
-    <label>구분</label>
-    <select>
-      <option>투자</option>
-      <option>광고</option>
-      <option>전략제휴</option>
-      <option>쇼핑/상품 입점</option>
-    </select>
+<div class="card"><b>제휴(신청)</b><p>투자 · 광고 · 전략제휴 · 쇼핑/상품 입점 신청.</p></div>
+<form class="section" data-demo>
+  <div class="field"><label>구분</label>
+    <select><option>투자</option><option>광고</option><option>전략제휴</option><option>쇼핑/상품 입점</option></select>
   </div>
-  <div class="field">
-    <label>회사/이름</label>
-    <input placeholder="예: ABC Ventures / 홍길동"/>
-  </div>
-  <div class="field">
-    <label>이메일</label>
-    <input placeholder="contact@example.com"/>
-  </div>
-  <div class="field">
-    <label>메시지</label>
-    <textarea placeholder="관심 분야, 제안 내용, 미팅 희망 일정 등을 적어 주세요."></textarea>
-  </div>
-  <div class="btnRow">
-    <button class="btn primary" type="submit">신청하기(데모)</button>
-    <a class="btn secondary" href="qa.html">Q&A</a>
-  </div>
+  <div class="field"><label>회사/이름</label><input placeholder="ABC 캐피탈 / 홍길동"/></div>
+  <div class="field"><label>이메일</label><input placeholder="contact@example.com"/></div>
+  <div class="field"><label>메시지</label><textarea placeholder="관심 분야, 제안 내용, 미팅 희망 일정 등"></textarea></div>
+  <div class="btnRow"><button class="btn primary" type="submit">신청하기(데모)</button></div>
 </form>
-
-<div class="card warning"><b>주의</b><p>이 페이지는 정적 데모입니다. 실제 운영에서는 개인정보처리방침/이용약관/보안이 포함된 신청 시스템으로 전환됩니다.</p></div>
+<div class="card warning"><b>주의</b><p>정적 데모: 신청 내용은 저장되지 않습니다. 실제 운영에서는 보안/약관/정책 포함.</p></div>
 
         </section>
 
         <div class="footer">
-          <div>© 2026 with4you • 데모 빌드</div>
+          <div>© 2026 with4you • Demo</div>
           <div>도메인: with4you.com</div>
         </div>
       </main>
