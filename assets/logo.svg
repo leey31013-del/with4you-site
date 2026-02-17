@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520" height="140" viewBox="0 0 520 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="with4you">
+  <rect width="520" height="140" fill="none"/>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" font-size="96">
+    <text x="10" y="100" fill="#7B3FE4">with</text>
+    <text x="232" y="100" fill="#FF1E1E">4</text>
+    <text x="292" y="100" fill="#7B3FE4">you</text>
+  </g>
+</svg>

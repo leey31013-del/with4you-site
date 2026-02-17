@@ -1,16 +1,28 @@
+
 (function(){
-  // mark active
-  const here = location.pathname.replace(/\/+$/,'');
-  document.querySelectorAll('a.item').forEach(a=>{
-    const href = (a.getAttribute('href')||'').replace(/\/+$/,'');
-    if(!href) return;
-    // compare filename endings
-    if(here.endsWith('/'+href) || here.endsWith(href) || (href==='index.html' && (here.endsWith('/')||here.endsWith('/index.html')))){
-      a.classList.add('active');
-    }
-  });
-  // demo-only forms
-  document.querySelectorAll('form[data-demo]').forEach(f=>{
-    f.addEventListener('submit',(e)=>{e.preventDefault(); alert('Static demo: submissions are not saved.');});
-  });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('show');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const animateBars = (root=document)=>{
+    root.querySelectorAll('.fill[data-pct]').forEach(el=>{
+      const pct = Math.max(0, Math.min(100, parseFloat(el.getAttribute('data-pct')) || 0));
+      el.style.width = pct + '%';
+    });
+  };
+  const chartObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        animateBars(e.target);
+        chartObserver.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.2});
+  document.querySelectorAll('.chart').forEach(el=>chartObserver.observe(el));
 })();
