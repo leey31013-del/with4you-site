@@ -1,82 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>with4you — Partnership</title>
-  <meta name="description" content="Investment • Ads • Strategic partnership (demo only)."/>
-  <link rel="stylesheet" href="../assets/style.css"/>
-  <script defer src="../assets/app.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Partnership and investment form (demo).">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="with4you | Partnership">
+<meta property="og:description" content="Partnership and investment form (demo).">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/hero-bg.png">
+<meta property="og:site_name" content="with4you">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/app.js"></script>
+<title>with4you | Partnership</title>
 </head>
 <body>
-  <div class="wrap">
-    <div class="shell">
-      <aside class="nav">
-        <div class="brand">
-          <div class="logo">w4</div>
-          <div>
-            <b>with4you</b>
-            <span>My new world in my hand (with4you.com)</span>
-          </div>
-        </div>
-
-        <div class="pills">
-          <span class="pill">AI Space Messenger</span>
-          <span class="pill">No server-side storage</span>
-          <span class="pill">Coin ✕ / Digital asset ✓</span>
-        </div>
-
-        <div class="lang">
-          <a class="btn" href="./">EN</a>
-          <a class="btn" href="../kr/partner.html">KR</a>
-        </div>
-
-        <nav class="menu"><a class="item" href="../index.html">• Home</a>
-<a class="item" href="product.html">• Product</a>
-<a class="item" href="market.html">• Marketplace</a>
-<a class="item active" href="partner.html">• Partnership</a>
-<a class="item" href="qa.html">• Q&A</a>
-<a class="item" href="notices.html">• Notices</a>
-<a class="item" href="admin.html">• Admin</a></nav>
-
-        <div class="note" style="margin-top:12px;">
-          Static investor demo. No APIs/passwords/sensitive data.
-        </div>
-      </aside>
-
-      <main class="main">
-        <section class="hero">
-          <h1>Partnership</h1>
-          <p class="lead"><b>Apply / Partner</b><br/>Investment • Ads • Strategic partnership (demo only).</p>
-          <div class="btnRow">
-            <a class="btn primary" href="partner.html">Apply / Partner</a>
-            <a class="btn" href="market.html">Marketplace preview</a>
-            <a class="btn" href="qa.html">Q&A</a>
-          </div>
-        </section>
-
-        <section class="section">
-          
-<div class="card"><b>Partnership (Apply)</b><p>Investment • Advertising • Strategic partnership • Marketplace listing.</p></div>
-<form class="section" data-demo>
-  <div class="field"><label>Type</label>
-    <select><option>Investment</option><option>Advertising</option><option>Strategic Partnership</option><option>Marketplace Listing</option></select>
-  </div>
-  <div class="field"><label>Company / Name</label><input placeholder="ABC Ventures / Jane Doe"/></div>
-  <div class="field"><label>Email</label><input placeholder="contact@example.com"/></div>
-  <div class="field"><label>Message</label><textarea placeholder="Proposal, interest areas, preferred meeting time..."></textarea></div>
-  <div class="btnRow"><button class="btn primary" type="submit">Submit (demo)</button></div>
-</form>
-<div class="card warning"><b>Note</b><p>Static demo: submissions are not saved. Production will include secured handling and policies.</p></div>
-
-        </section>
-
-        <div class="footer">
-          <div>© 2026 with4you • Demo</div>
-          <div>Domain target: with4you.com</div>
-        </div>
-      </main>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../en/index.html">
+      <img src="../assets/favicon.svg" alt="w4">
+      <div class="t"><span class="p">with</span><span class="r">4</span><span class="p">you</span></div>
+    </a>
+    <div class="navlinks">
+      <a class="" href="./index.html">Home</a>
+<a class="cta" href="./ir.html">Investor IR</a>
+<a class="" href="./strategy.html">Strategy</a>
+<a class="" href="./market.html">Market</a>
+<a class="" href="./partner.html">Partnership</a>
+<a class="" href="./qa.html">Q&A</a>
+      <a class="btn" style="padding:8px 12px" href="../kr/index.html">KR</a>
     </div>
   </div>
+</header>
+<section class="section"><div class="container"><div class="card reveal">
+<span class="badge"><i class="i-purple"></i> Partnership</span>
+<h2 style="margin:10px 0 6px">Apply for partnership / investment</h2>
+<p class="small">Static demo form. Wire to your backend later.</p><div class="hr"></div>
+<form class="form" onsubmit="event.preventDefault(); alert('Submitted (demo).');">
+<div><input required placeholder="Name"></div><div><input placeholder="Company"></div>
+<div><input required type="email" placeholder="Email"></div>
+<div><select required><option value="">Select</option><option>Investment</option><option>Advertising</option><option>Strategic partnership</option><option>Marketplace / creator program</option></select></div>
+<div style="grid-column:1/-1"><textarea placeholder="Message / request"></textarea></div>
+<div><button type="submit">Submit</button></div>
+<div class="small">No data is stored on this demo site.</div>
+</form></div></div></section>
+<footer class="footer">
+  <div class="container">
+    © 2026 with4you • Domain target: <b>with4you.com</b> • <a href="../index.html">Root</a>
+  </div>
+</footer>
 </body>
 </html>
